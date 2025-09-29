@@ -13,8 +13,11 @@ I developed this project to illustrate my data engineering experience, specifica
 # What I Showed in this Project
 
 •	Building a cloud-native ELT pipeline
+
 •	Automating workflows with Airflow
+
 •	Transforming and modeling data in BigQuery
+
 •	Delivering insights with Looker dashboards
 
 
