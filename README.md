@@ -10,6 +10,11 @@ I developed this project to illustrate my data engineering experience, specifica
 3.	BigQuery → Data flows through staging → transformation → reporting layers.
 4.	Visualization → Looker dashboards provide insights to end users.
 
+# Archtecture
+<img width="1201" height="651" alt="ELT drawio" src="https://github.com/user-attachments/assets/63608b40-2350-4929-984f-f87300bbb79b" />
+
+
+
 # What I Showed in this Project
 
 •	Building a cloud-native ELT pipeline
@@ -19,11 +24,3 @@ I developed this project to illustrate my data engineering experience, specifica
 •	Transforming and modeling data in BigQuery
 
 •	Delivering insights with Looker dashboards
-
-
-
-
-
-
-
-<img width="1201" height="651" alt="ELT drawio" src="https://github.com/user-attachments/assets/63608b40-2350-4929-984f-f87300bbb79b" />
