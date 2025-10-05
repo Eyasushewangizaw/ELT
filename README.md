@@ -1,14 +1,26 @@
-## Automated ELT Pipeline on Google Cloud
-# About the Project
+## End-to-End ELT Pipeline on Google Cloud
+# Overview
 
-I developed this project to illustrate my data engineering experience, specifically by building an end-to-end ELT pipeline on Google Cloud Platform. The data pipeline extracts unclean CSVs, transforms the data in BigQuery, and provides Looker dashboards with interactive visualizations.
+In this project, I built an end-to-end ELT (Extract, Load, Transform) data pipeline using Google Cloud Platform (GCP).
+The goal was to process a healthcare CSV dataset containing 1 million records, automate data movement, and make it available for analytics through Looker dashboards.
 
-# How It Works
+# How I designed and implemented the pipeline:
 
-1.	Raw Data → CSV files uploaded to Google Cloud Storage.
-2.	Orchestration → Apache Airflow (on Compute Engine) automates data loading and scheduling.
-3.	BigQuery → Data flows through staging → transformation → reporting layers.
-4.	Visualization → Looker dashboards provide insights to end users.
+Google Cloud Storage (GCS) : I stored the raw CSV file in GCS Bucket, which served as the landing zone for external data uploads.
+
+Compute Engine (VM) + Apache Airflow : I set up a Compute Engine virtual machine and installed Apache Airflow to orchestrate the pipeline.
+Airflow automates the process of extracting data from GCS, loading it into BigQuery, and performing transformations.
+
+BigQuery (Data Warehouse) : I used BigQuery as the data warehouse and structured it into three logical layers:
+
+                Staging Dataset – holds the raw data loaded directly from GCS.
+
+                Transforming Dataset – contains the cleaned and transformed data using SQL transformations.
+
+                Reporting Dataset – stores the final analytics-ready tables used for reporting.
+
+Looker (Data Visualization)
+I connected Looker to the reporting dataset in BigQuery to build dashboards and visualize insights from the processed data.
 
 # Archtecture
 <img width="1201" height="651" alt="ELT drawio" src="https://github.com/user-attachments/assets/63608b40-2350-4929-984f-f87300bbb79b" />
@@ -17,10 +29,10 @@ I developed this project to illustrate my data engineering experience, specifica
 
 # What I Showed in this Project
 
-•	Building a cloud-native ELT pipeline
+Extract – I extracted the CSV file from Google Cloud Storage.
 
-•	Automating workflows with Airflow
+Load – Using Airflow’s GCSToBigQueryOperator, I loaded the raw data into BigQuery’s staging dataset.
 
-•	Transforming and modeling data in BigQuery
+Transform – I applied SQL transformations within BigQuery Datawarehouse to clean and structure the data into transforming and reporting datasets.
 
-•	Delivering insights with Looker dashboards
+Visualize – Finally, I connected Looker to the reporting tables to create dashboards for end users.
