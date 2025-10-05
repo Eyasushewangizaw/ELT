@@ -2,7 +2,7 @@
 # Overview
 
 In this project, I built an end-to-end ELT (Extract, Load, Transform) data pipeline using Google Cloud Platform (GCP).
-The goal was to process a healthcare CSV dataset containing 1 million records, automate data movement, and make it available for analytics through Looker dashboards.
+The goal was to process a healthcare CSV dataset containing 1 million records, and make it available for analytics through Looker dashboards by using ELT pipeline.
 
 # How I designed and implemented the pipeline:
 
