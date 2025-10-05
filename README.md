@@ -17,7 +17,7 @@ BigQuery (Data Warehouse) : I used BigQuery as the data warehouse and structured
 
                 Transforming Dataset – contains the cleaned and transformed data using SQL transformations.
 
-                Reporting Dataset – stores the final analytics-ready tables used for reporting.
+                Reporting Dataset – stores the final analytics-ready Views used for reporting.
 
 Looker (Data Visualization)
 I connected Looker to the reporting dataset in BigQuery to build dashboards and visualize insights from the processed data.
