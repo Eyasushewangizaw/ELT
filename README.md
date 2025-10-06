@@ -17,7 +17,7 @@ The goal was to process a healthcare CSV dataset containing 1 million records, a
 
                 Transforming Dataset – contains the cleaned and transformed data using SQL transformations.
 
-                Reporting Dataset – stores the final analytics-ready Views used for reporting.
+                Reporting Dataset – stores the final analytics-ready Views of selected countries and used for reporting.
 
   D) Looker (Data Visualization) : I connected Looker to the reporting dataset in BigQuery to build dashboards and visualize insights from the processed data.
 
