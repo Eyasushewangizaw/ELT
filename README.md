@@ -3,7 +3,7 @@
 
 In this project, I built an end-to-end ELT (Extract, Load, Transform) data pipeline using Google Cloud Platform (GCP).
 
-The goal of the project was to process a healthcare CSV dataset containing 1 million records of countries’ health statistics over several years and make the data available for analytics and visualization through Looker Studio dashboards.
+The goal of the project was to process a healthcare CSV dataset containing 1 million records of data’ health statistics over several years and make the data available for analytics and visualization through Looker Studio dashboards.
 
 Using Looker Studio, I created interactive visual reports for each country, showing how key health indicators and diseases—such as Tuberculosis, Cancer, COVID-19, Diabetes, and Malaria—have changed over the years. I built dashboard (including France, the USA, Canada, Nigeria, and Italy) visualizes annual health trends, compares disease prevalence, and provides insights into how health conditions have evolved over time.
 
