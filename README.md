@@ -9,7 +9,7 @@ The goal was to process a healthcare CSV dataset containing 1 million records, a
   A) Google Cloud Storage (GCS) : I stored the raw CSV file in GCS Bucket, which served as the landing zone for external data uploads.
 
   B) Compute Engine (VM) + Apache Airflow : I set up a Compute Engine virtual machine and installed Python and Apache Airflow to orchestrate the pipeline.
-  Airflow automates the process of extracting data from GCS, loading it into BigQuery, and performing transformations.
+  Airflow helps to process of extracting data from GCS, loading it into BigQuery, and performing transformations.
 
   C) BigQuery (Data Warehouse) : I used BigQuery as the data warehouse and structured it into three logical layers:
 
