@@ -33,7 +33,7 @@ Using Looker Studio, I created interactive visual reports for each country, show
 
   Extract – I extracted the CSV file from Google Cloud Storage.
 
-  Load – Using Airflow’s GCSToBigQueryOperator, I loaded the raw data into BigQuery’s staging dataset.
+  Load – Using Airflow’s GCSToBigQueryOperator in my DAG file, I loaded the raw data into BigQuery’s staging dataset.
 
   Transform – I applied SQL transformations within BigQuery Datawarehouse to clean and structure the data into transforming and reporting datasets.
 
