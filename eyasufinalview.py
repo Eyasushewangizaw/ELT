@@ -18,7 +18,7 @@ default_args = {
 project_id = 'eyasuproject2'
 dataset_id = 'eyasudataset1'
 transform_dataset_id = 'transform_dataset'
-reporting_dataset_id = 'eyasuviewdataset'
+reporting_dataset_id = 'eyasu_reporting_dataset'
 source_table = f'{project_id}.{dataset_id}.global_data'  # Main table loaded from CSV
 countries = ['USA', 'Nigeria', 'Saudi_Arabia', 'France', 'Canada', 'Italy']  # Country-specific tables to be created
 # DAG definition
