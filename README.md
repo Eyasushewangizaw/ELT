@@ -35,6 +35,6 @@ Using Looker Studio, I created interactive visual reports for each country, show
 
   Load – Using Airflow’s GCSToBigQueryOperator in my DAG file, I loaded the raw data into BigQuery’s staging dataset.
 
-  Transform – I applied SQL transformations within BigQuery Datawarehouse to clean and structure the data into transforming and reporting datasets.
+  Transform – I transformed the data into separate tables and reporting views for each country.
 
   Visualize – Finally, I connected Looker to the reporting tables to create dashboards for end users.
