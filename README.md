@@ -38,3 +38,14 @@ Using Looker Studio, I created interactive visual reports for each country, show
   Transform – I transformed the data into separate tables and reporting views for each country.
 
   Visualize – Finally, I connected Looker to the reporting tables to create dashboards for end users.
+
+# Airflow Pipeline
+
+<img width="1916" height="1025" alt="Screenshot 2025-10-04 235556" src="https://github.com/user-attachments/assets/ddb03609-2347-494f-8fcd-f16661498d02" />
+
+As you can see this pipeline shows that it Extracted the data from GCS bucket then loaded it into BigQuery also transforming it into views from theparent table for each country.
+
+<img width="330" height="591" alt="Screenshot 2025-10-09 065447" src="https://github.com/user-attachments/assets/160bfe27-6a43-4405-a933-9cfa011a3331" />
+
+This is the screenshot showing successful completion of data load into BigQuery table.
+
