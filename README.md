@@ -51,3 +51,11 @@ As you can see this pipeline shows that it Extracted the data from GCS bucket th
 
 This is the screenshot showing successful completion of data load into BigQuery datawarehouse.
 
+
+
+
+
+## VISUAL REPORT FOR EACH COUNTRY
+
+# Canada
+
