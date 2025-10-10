@@ -45,6 +45,8 @@ Using Looker Studio, I created interactive visual reports for each country, show
 
 As you can see this pipeline shows that it Extracted the data from GCS bucket then loaded it into BigQuery also transforming it into views from theparent table for each country.
 
+# Completion of Pipeline
+
 <img width="330" height="591" alt="Screenshot 2025-10-09 065447" src="https://github.com/user-attachments/assets/160bfe27-6a43-4405-a933-9cfa011a3331" />
 
 This is the screenshot showing successful completion of data load into BigQuery table.
