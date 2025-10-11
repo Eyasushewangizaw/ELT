@@ -11,7 +11,7 @@ Using Looker Studio, I created interactive visual reports for each country, show
 
   A) Google Cloud Storage (GCS) : I stored the raw CSV file in GCS Bucket, which served as the landing zone for external data uploads.
 
-  B) Compute Engine (VM) + Apache Airflow : I set up a Compute Engine virtual machine and installed Python and Apache Airflow to orchestrate the pipeline.
+  B) Compute Engine (VM) + Apache Airflow : I set up a Compute Engine virtual machine and installed Python, Apache Airflow and developed DAG file to orchestrate the pipeline.
   Airflow helps to process of extracting data from GCS, loading it into BigQuery, and performing transformations.
 
   C) BigQuery (Data Warehouse) : I used BigQuery as the data warehouse and structured it into three logical layers:
@@ -33,8 +33,50 @@ Using Looker Studio, I created interactive visual reports for each country, show
 
   Extract – I extracted the CSV file from Google Cloud Storage.
 
-  Load – Using Airflow’s GCSToBigQueryOperator, I loaded the raw data into BigQuery’s staging dataset.
+  Load – Using Airflow’s GCSToBigQueryOperator in my DAG file, I loaded the raw data into BigQuery’s staging dataset.
 
-  Transform – I applied SQL transformations within BigQuery Datawarehouse to clean and structure the data into transforming and reporting datasets.
+  Transform – I transformed the data into separate tables and reporting views for each country.
 
   Visualize – Finally, I connected Looker to the reporting tables to create dashboards for end users.
+
+# Airflow Pipeline
+
+<img width="1916" height="1025" alt="Screenshot 2025-10-04 235556" src="https://github.com/user-attachments/assets/ddb03609-2347-494f-8fcd-f16661498d02" />
+
+As you can see this pipeline shows that it Extracted the data from GCS bucket then loaded it into BigQuery also transforming it into views from the parent table for each country.
+
+# Completion of Pipeline
+
+<img width="330" height="591" alt="Screenshot 2025-10-09 065447" src="https://github.com/user-attachments/assets/160bfe27-6a43-4405-a933-9cfa011a3331" />
+
+This is the screenshot showing successful completion of data load into BigQuery datawarehouse.
+
+
+
+
+
+## VISUAL REPORT FOR EACH COUNTRY
+
+# Canada
+
+<img width="837" height="702" alt="CANADA" src="https://github.com/user-attachments/assets/e336e323-38c3-4d7c-86d0-1bf5d27b6706" />
+
+# France
+
+<img width="990" height="837" alt="FRANCE" src="https://github.com/user-attachments/assets/2a362dfe-1fef-4acb-b97e-0f32153ddf6c" />
+
+# Italy
+
+<img width="862" height="796" alt="ITALY" src="https://github.com/user-attachments/assets/374d917b-bc15-475e-bad2-d1dc4ed0ec35" />
+
+# Nigeria
+
+<img width="804" height="792" alt="NIGERIA" src="https://github.com/user-attachments/assets/5f466eae-60b0-4411-97bf-2d00215038f3" />
+
+# USA
+
+<img width="969" height="827" alt="USA" src="https://github.com/user-attachments/assets/108a58ff-58be-4565-bb17-f5c3a2329669" />
+
+
+
+
