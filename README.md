@@ -59,3 +59,24 @@ This is the screenshot showing successful completion of data load into BigQuery 
 
 # Canada
 
+<img width="837" height="702" alt="CANADA" src="https://github.com/user-attachments/assets/e336e323-38c3-4d7c-86d0-1bf5d27b6706" />
+
+# France
+
+<img width="990" height="837" alt="FRANCE" src="https://github.com/user-attachments/assets/2a362dfe-1fef-4acb-b97e-0f32153ddf6c" />
+
+# Italy
+
+<img width="862" height="796" alt="ITALY" src="https://github.com/user-attachments/assets/374d917b-bc15-475e-bad2-d1dc4ed0ec35" />
+
+# Nigeria
+
+<img width="804" height="792" alt="NIGERIA" src="https://github.com/user-attachments/assets/5f466eae-60b0-4411-97bf-2d00215038f3" />
+
+# USA
+
+<img width="969" height="827" alt="USA" src="https://github.com/user-attachments/assets/108a58ff-58be-4565-bb17-f5c3a2329669" />
+
+
+
+
