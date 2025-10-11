@@ -13,7 +13,7 @@ default_args = {
 
 # DAG definition
 with DAG(
-    dag_id='eyasu_load_gcs_to_bq',
+    dag_id='load_gcs_to_bq',
     default_args=default_args,
     description='Load a CSV file from GCS to BigQuery',
     schedule=None,  # Set as required (e.g., '@daily', '0 12 * * *')

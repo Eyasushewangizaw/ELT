@@ -45,7 +45,7 @@ with DAG(
     # Task 2: Load CSV from GCS to BigQuery
     load_csv_to_bigquery = GCSToBigQueryOperator(
         task_id='load_csv_to_bq',
-        bucket='bkt-src-global-data',  # Replace with your bucket name
+        bucket='eyasubucketsrc',  # Replace with your bucket name
         source_objects=['global_health_data.csv'],  # Path to your file in the bucket
         destination_project_dataset_table=source_table,
         source_format='CSV',

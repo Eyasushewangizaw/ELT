@@ -26,7 +26,7 @@ with DAG(
     # Task to check if the file exists in GCS
     check_file_exists = GCSObjectExistenceSensor(
         task_id='check_file_exists',
-        bucket='bkt-src-global-data',  # Replace with your bucket name
+        bucket='eyasubucketsrc',  # Replace with your bucket name
         object='global_health_data.csv',  # Replace with the file path in the bucket
         timeout=300,  # Maximum wait time in seconds
         poke_interval=30,  # Time interval in seconds to check again
